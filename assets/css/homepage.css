@@ -1,10 +1,139 @@
-.redText {
-    color: red;
-    font-weight: 80;
-    font-size: 60px;
+
+#navbar {
+    overflow: hidden;
+    background-color:white;
+    border-radius: 50px;
+    margin: 10px;
+    text-align: center;
+  
+  }
+  
+   #navbar a {
+    font-family: Century Gothic;
+    font-weight: bold;
+    float: left; 
+    display: block;
+    color: rgb(69, 193, 197);
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    text-align: center;
+   }
+    
+    #headerbar {
+      font-family: Century Gothic;
+      font-weight: bold;
+      font-size: 25px;
+      overflow: hidden;
+      background-color: rgb(69, 193, 197);
+      border-radius: 25px;
+      margin: 10px;
+      padding: 10px;
+      color: white;
+      text-align: left;
+    }   
+
+    #eventBar {
+      font-family: Century Gothic;
+      font-weight: bold;
+      font-size: 25px;
+      overflow: hidden;
+      background-color: white;
+      border-radius: 25px;
+      margin: 10px;
+      padding: 10px;
+      color: rgb(33,72,102);
+      text-align: left;
+    }   
+    #footer {
+      font-family: Century Gothic;
+    float: left; 
+    display: block;
+    width: 100%;
+    background-color: rgb(33,72,102);
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    text-align: center;
+    }   
+   .content {
+    padding: 16px;
+  }
+  
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+ 
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  .homeimage {
+    background-image: url("../images/homepage1.JPG");
+    height: 300px;
+    margin: 20px;
+    border-radius: 25px;
+    background-position: 50% 30%; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#profilePhoto {
-        width: 200px;
-        height: 300 px;
+#redButton {
+  font-family: Century Gothic;
+      font-weight: bold;
+      font-size: 25px;
+      overflow: hidden;
+      background-color: rgb(238, 54, 37);
+      border-radius: 10px;
+      margin: 10px;
+      padding: 10px;
+      color: white;
+      text-align: center;
+      height: 50px;
+      width: 180px;
+      float: right;
+}
+#homeabout {
+  font-family: Century Gothic;
+      font-size: 25px;
+      overflow: hidden;
+      background-color: rgb(33,72,102);
+      border-radius: 10px;
+      margin: 10px;
+      padding: 10px;
+      color: white;
+      text-align: center;
+      height: 200px;
+}
+#listofevents {
+  font-family: Century Gothic;
+      font-size: 25px;
+      overflow: hidden;
+      background-color:white;
+      border-radius: 10px;
+      margin: 10px;
+      padding: 10px;
+      text-align: left;
+      width: 600px;
+
+}
+
+.header
+{
+  font-family: Century Gothic;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(69, 193, 197);
+}
+.eventText
+{
+  font-family: Century Gothic;
+  font-size:30px;
+  color: rgb(33,72,102);
 }
