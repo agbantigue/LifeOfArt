@@ -1,0 +1,336 @@
+#sitebar {
+    overflow: hidden;
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+  
+  #logoimage {
+    background-image: url("../images/Text_Logo.png");
+    display: block;
+    height: 56px;
+    width: 300px;
+    padding: 5px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+  
+  
+  }
+  
+  #navbar {
+    overflow: hidden;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 0px;
+    text-align: center;
+    margin-bottom: 10px;
+    width: auto;
+  
+  }
+  
+  #navbar a {
+    font-family: Century Gothic;
+    font-weight: bold;
+    font-size: 22px;
+    display: block;
+    color: rgb(69, 193, 197);
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+  
+  }
+  
+  
+  
+  #headerbar {
+    font-family: Century Gothic;
+    font-weight: bold;
+    font-size: 36px;
+    overflow: hidden;
+    background-color: rgb(69, 193, 197);
+    border-radius: 20px;
+    padding: 15px;
+    color: white;
+    text-align: left;
+    margin: 10px;
+  }
+  
+  #eventBar {
+    font-family: Century Gothic;
+    font-weight: bold;
+    font-size: 36px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    color: rgb(33, 72, 102);
+    text-align: left;
+  
+  }
+  
+  #footer {
+    font-family: Century Gothic;
+    display: block;
+    background-color: rgb(33, 72, 102);
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+  }
+  
+  #footer a {
+    font-family: Century Gothic;
+    font-size: 10px;
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    text-decoration: none;
+  
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  
+  .sticky+.content {
+    padding-top: 60px;
+  }
+  
+  
+  
+  
+  #redButton {
+    font-family: Century Gothic;
+  
+    background-color: rgb(238, 54, 37);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 97%;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  
+  
+  }
+  
+  #loginbutton {
+    font-family: Century Gothic;
+    background-color: rgb(238, 54, 37);
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-left: auto;
+    padding: 5px;
+    overflow: hidden;
+    text-align: center;
+  
+  }
+  
+  #loginbutton a {
+    color: white;
+    text-align: center;
+    height: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    overflow: hidden;
+    text-decoration: none;
+  
+  }
+  
+  #signup {
+    font-family: Century Gothic;
+    width: 100px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-right: 15px;
+    margin-left: auto;
+    overflow: hidden;
+  
+  }
+  
+  #signup a {
+    color: rgb(33, 72, 102);
+    text-align: center;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  #redButton a {
+    color: white;
+    text-align: center;
+    height: 60px;
+    font-weight: bold;
+    font-size: 30px;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  
+  form.example input[type=text] {
+    font-family: Century Gothic;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 15px;
+    padding-right: 10px;
+    margin-right: auto;
+    font-size: 17px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+    float: left;
+    width: 100%;
+    max-width: 280px;
+    height: 30px;
+    background: #f1f1f1;
+  
+  }
+  
+  
+  form.example button {
+    float: left;
+    width: 40px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    background: rgb(238, 54, 37);
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-left: none;
+    cursor: pointer;
+  
+  }
+  
+  form.example button:hover {
+    background: rgb(33, 72, 102);
+  }
+  
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  
+  .largeMerch {
+    height: 100%;
+    min-height: 200px;
+    max-height: 500px;
+    width: 100%;
+    min-width: 200px;
+    max-width: 500px;
+    margin: 20px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  
+  }
+  
+  
+  
+  .thumbnails {
+    height: 100%;
+    min-height: 75px;
+    max-height: 100px;
+    width: 100%;
+    min-width: 75px;
+    max-width: 100px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  
+  }
+  
+  
+  #buyItem {
+    font-family: Century Gothic;
+    font-size: 20px;
+    overflow: hidden;
+    background-color: white;
+    height: 100%;
+    min-height: 400px;
+    max-height: 550px;
+    width: 100%;
+    min-width: 300px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    color: rgb(33, 72, 102);
+    text-align: left;
+    position: relative;
+    column-width: auto;
+  
+  }
+  
+  #itemName {
+    font-family: Century Gothic;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    color: rgb(69, 193, 197);
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    
+     }
+  
+  #cartInfo {
+    font-family: Century Gothic;
+    font-size: 20px;
+    overflow: hidden;
+    background-color: white;
+    height: auto;
+    min-height: 300px;
+    max-height: 600px;
+    width: auto;
+    min-width: 200px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: rgb(33, 72, 102);
+    text-align: left;
+  
+  
+  }
+  
+  .ml-15 {
+    margin-left: 15px;
+  }
