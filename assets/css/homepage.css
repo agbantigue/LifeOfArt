@@ -142,6 +142,15 @@
 
 
 }
+#redButton a {
+  color: white;
+      text-align: center;
+      height: 60px;
+      font-weight: bold;
+      font-size: 30px;
+      overflow: hidden;
+      text-decoration: none;
+}
 
 #loginbutton {
   font-family: Century Gothic;
@@ -186,15 +195,7 @@
   text-decoration: none;
 }
 
-#redButton a {
-  color: white;
-      text-align: center;
-      height: 60px;
-      font-weight: bold;
-      font-size: 30px;
-      overflow: hidden;
-      text-decoration: none;
-}
+
 #homeabout {
   font-family: Century Gothic;
       font-size: 20px;
@@ -394,76 +395,301 @@
   
   
   .thumbnails {
-    height: 100%;
-    min-height: 75px;
+    height: auto;
+    min-height: 50px;
     max-height: 100px;
     width: 100%;
-    min-width: 75px;
+    min-width: 50px;
     max-width: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     border-radius: 15px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+    opacity: 0.6;
   
   }
-  
-  
-  #buyItem {
-    font-family: Century Gothic;
-    font-size: 20px;
-    overflow: hidden;
-    background-color: white;
-    height: 100%;
-    min-height: 400px;
-    max-height: 550px;
-    width: 100%;
-    min-width: 300px;
-    border-radius: 10px;
-    margin: 20px;
-    padding: 10px;
-    color: rgb(33, 72, 102);
-    text-align: left;
-    position: relative;
-    column-width: auto;
-  
+
+  .active, .thumbnails:hover {
+    opacity:1;
+    border: 1px solid rgb(69, 193, 197);
   }
   
-  #itemName {
-    font-family: Century Gothic;
-    font-weight: bold;
-    font-size: 20px;
-    display: block;
-    color: rgb(69, 193, 197);
-    margin-right: auto;
-    margin-left: auto;
-    padding: 10px;
-    text-decoration: none;
-    text-align: center;
-    
-     }
-  
-  #cartInfo {
+  #merchBox {
     font-family: Century Gothic;
     font-size: 20px;
     overflow: hidden;
     background-color: white;
     height: auto;
-    min-height: 300px;
-    max-height: 600px;
-    width: auto;
-    min-width: 200px;
+    width: 100%;
+    min-width: 300px;
+    max-width: 600px;
     border-radius: 10px;
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin: 20px;
     padding: 10px;
     color: rgb(33, 72, 102);
     text-align: left;
   
-  
   }
   
+  #itemNameBox {
+    font-family: Century Gothic;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    background-color: rgb(69, 193, 197);
+    border-radius: 15px;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    
+     }
+  
+  .sizeBox {
+    font-family: Century Gothic;
+    font-size: 20px;
+    font-weight: bold;
+    overflow: hidden;
+    
+    height: auto;
+    width: 100%;
+    min-width: 50px;
+    border-radius: 5px;
+    margin-top:20px;
+    margin-bottom: 5px;
+    border: 2px solid rgb(33, 72, 102);
+    padding: 5px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    color: rgb(33, 72, 102);
+    text-align: center;
+  }
+
+  .active,.sizeBox:hover{
+    background-color: rgb(199, 255, 255);    
+}
+
+
+  .whiteCircle {
+    height: 50px;
+    width: 50px;
+    border-radius:50%;
+    border: 2px solid rgb(199, 255, 255);
+    background-color: white;
+    margin-top: 10px;
+    
+  }
+  .active,.whiteCircle:hover{
+    border: 2px solid rgb(69, 193, 197);    
+}
+  .lightBlueCircle {
+    height: 50px;
+    width: 50px;
+    border-radius:50%;
+    background-color: rgb(199, 255, 255);
+    margin-top: 10px;
+  }
+  .active,.lightBlueCircle:hover{
+    border: 2px solid rgb(69, 193, 197);    
+}
+  .darkBlueCircle {
+    height: 50px;
+    width: 50px;
+    border-radius:50%;
+    background-color:rgb(33, 72, 102);
+    margin-top: 10px;
+  }
+  .active,.darkBlueCircle:hover{
+    border: 2px solid rgb(69, 193, 197);    
+}
+
+  .redCircle {
+    height: 50px;
+    width: 50px;
+    border-radius:50%;
+    background-color: rgb(238, 54, 37);
+    margin-top: 10px;
+  }
+  .active,.redCircle:hover{
+    border: 2px solid rgb(69, 193, 197);    
+}
+
+  #cartBox {
+    font-family: Century Gothic;
+    font-size: 15px;
+    overflow: hidden;
+    background-color: white;
+    height:auto;
+    max-height: 400px;
+    min-height: 150px;
+    width:auto;
+    max-width: 400px;
+    
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    color: rgb(33, 72, 102);
+    text-align: center;
+    
+  }
+  
+ 
   .ml-15 {
     margin-left: 15px;
   }
+
+  #blueButton {
+    font-family: Century Gothic;
+        
+        background-color: rgb(33, 72, 102);
+        border-radius: 10px;
+        width:100%;
+        max-width: 97%;
+        margin:10px;
+        padding: 10px;
+        overflow: hidden;
+        text-align: center;
+        margin-left:auto;
+        margin-right: auto;
+  
+  
+  }
+  #blueButton a {
+    color: white;
+        text-align: center;
+        height: 30px;
+        font-weight: bold;
+        font-size: 20px;
+        overflow: hidden;
+        text-decoration: none;
+  }
+
+  .donateimage {
+    background-image: url("../images/homepage2.JPG");
+    height: 300px;
+    width: auto;
+    margin: 20px;
+    border-radius: 15px;
+    background-position: 50% 50%; 
+    background-attachment: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  #donateabout {
+    font-family: Century Gothic;
+        font-size: 22px;
+        overflow: hidden;
+        background-color: rgb(33,72,102);
+        height: auto;
+        min-height: 300px;
+        width: auto;
+        border-radius: 10px;
+        margin: 10px;
+        margin-top: 20px;
+        padding: 15px;
+        color: white;
+        text-align: center;
+        float: left;
+  }
+
+  #donateBar{
+    font-family: Century Gothic;
+      font-weight: bold;
+      font-size: 36px;
+      overflow: hidden;
+      background-color: white;
+      border-radius: 10px;
+      margin: 10px;
+      padding: 10px;
+      color: rgb(33,72,102);
+      text-align: left;
+  }
+
+  #warningBar{
+    font-family: Century Gothic;
+    font-size: 12px;
+    font-weight: bold;
+    overflow: hidden;
+    height: auto;
+    background-color:white;
+    color: rgb(238, 54, 37);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    
+  }
+  .donateBox1 {
+    font-family: Century Gothic;
+    font-size: 40px;
+    font-weight: bold;
+    overflow: hidden;
+    height: 100px;
+    width: auto;
+    min-width: 125px;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 5px;
+    padding-top: 15px;
+    color: rgb(69, 193, 197);
+    background-color: white;
+    text-align: center;
+  }
+  .donateBox2 {
+    font-family: Century Gothic;
+    font-size: 20px;
+    font-weight: bold;
+    overflow: hidden;
+    height: 100px;
+    width: auto;
+    min-width: 150px;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: rgb(69, 193, 197);
+    background-color: white;
+    text-align: center;
+  }
+  .active,.donateBox1:hover, .donateBox2:hover{
+    background-color: rgb(199, 255, 255);    
+    border: 5px solid rgb(69, 193, 197);
+    color: rgb(33, 72, 102);
+}
+
+.donateInput1 {
+  font-family: Century Gothic;
+  font-size: 30px;
+  overflow: hidden;
+  height: 100px;
+  width: auto;
+  min-width: 125px;
+  border-radius: 15px;
+  margin: 20px;
+  padding: 5px;
+  padding-top: 15px;
+  color: grey;
+  background-color: white;
+  text-align: left;
+}
+.donateInput2 {
+  font-family: Century Gothic;
+  font-size: 30px;
+  overflow: hidden;
+  height: 100px;
+  width: auto;
+  min-height: 75px;
+  border-radius: 15px;
+  margin: 20px;
+  padding: 5px;
+  padding-top: 15px;
+  color: grey;
+  background-color: white;
+  text-align: left;
+}

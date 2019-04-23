@@ -22,7 +22,15 @@
     <!-- locall css style-->
     <link rel="stylesheet" href="assets/css/homepage.css">
 
-
+    <script>
+            function myFunction(imgs) {
+              var expandImg = document.getElementById("expandedImg");
+              var imgText = document.getElementById("imgtext");
+              expandImg.src = imgs.src;
+              imgText.innerHTML = imgs.alt;
+              expandImg.parentElement.style.display = "block";
+            }
+    </script>
 </head>
 
 <body style="background-color: rgb(199, 255, 255)">
@@ -97,84 +105,302 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col md-4">
+            <div class="col-lg-8">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
 
-                <div class="row">
-                    <img class="largeMerch" src="assets\images\merch\tshirt_light_blue.png">
-                </div>
+                                <div class="row">
+                                        <img class="largeMerch" src="assets\images\merch\tshirt_light_blue.png">
+                                </div>
 
-                <div class="row">
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <img class="thumbnails" src="assets/images/merch/tshirt white.png">
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <img class="thumbnails" src="assets/images/merch/tshirt_light_blue.png">
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <img class="thumbnails" src="assets/images/merch/tshirt dark blue.png">
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <img class="thumbnails" src="assets/images/merch/tshirt red.png">
-                    </div>
-                </div>
+                                <div class="row">
+                                        <div class="col-sm-6 col-md-6 col-lg-3">
+                                            <img class="thumbnails" src="assets/images/merch/tshirt white.png">
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-3">
+                                            <img class="thumbnails" src="assets/images/merch/tshirt_light_blue.png">
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-3">
+                                            <img class="thumbnails" src="assets/images/merch/tshirt dark blue.png">
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-3">
+                                            <img class="thumbnails" src="assets/images/merch/tshirt red.png">
+                                        </div>
+                                </div>
 
-                <div class="row">
-                    <img class="largeMerch" src="assets\images\merch\hoodie dark blue.png">
-                </div>
+                            </div>
 
-                <div class="row">
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <img class="thumbnails" src="assets\images\merch\hoodie white.png">
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <img class="thumbnails" src="assets\images\merch\hoodie light blue.png">
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <img class="thumbnails" src="assets\images\merch\hoodie dark blue.png">
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <img class="thumbnails" src="assets\images\merch\hoodie red.png">
-                    </div>
-                </div>
+                            <div class="col">
+                                <div class="row">
 
-                <div class="row">
-                    <img class="largeMerch" src="assets\images\merch\hat red.png">
-                </div>
 
-                <div class="row">
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <img class="thumbnails" src="assets\images\merch\hat white.png">
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <img class="thumbnails" src="assets\images\merch\hat light blue.png">
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <img class="thumbnails" src="assets\images\merch\hat dark blue.png">
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <img class="thumbnails" src="assets\images\merch\hat red.png">
-                    </div>
-                </div>
+                                    <div id="merchBox">
+                                        <div class="row-sm-12">
+                                            <div id="itemNameBox">T SHIRT</div>
+                                        </div>
+                                        <div class="row-sm-12">
+                                            <u><b>SIZE:</b></u>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="sizeBox">XS</div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="sizeBox">S</div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="sizeBox">M</div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="sizeBox">L</div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="sizeBox">XL</div>
+                                            </div>
+                                        </div>
 
-            </div>
+                                        <div class="row-sm-12">
+                                            <u><b>COLOR:</b></u>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <div class="whiteCircle"></div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="lightBlueCircle"></div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="darkBlueCircle"></div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="redCircle"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row-sm-12">
+                                                    <u><b>PRICE:</b></u>
+                                                    <p> $12.00 USD</p>
+                                        </div>
+                                        <div id="blueButton">A<a href="#cart">ADD TO CART</a></div>
+                                    </div>
 
-            <div class="col md-4">
-                <div class="row">
-                    <div id="buyItem">tshirt</div>
-                </div>
-                <div class="row">
-                    <div id="buyItem">hoodie</div>
-                </div>
-                <div class="row">
-                    <div id="buyItem">hat</div>
-                </div>
-            </div>
+                                </div>
+                            </div>
 
-            <div class="col-md-4">
-                <div id="cartInfo">Purchases</div>
+                        </div>
+
+
+                        <div class="row">
+
+                            <div class="col">
+                                <div class="row">
+                                    <img class="largeMerch" src="assets\images\merch\hoodie dark blue.png">
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-6 col-lg-3">
+                                        <img class="thumbnails" src="assets\images\merch\hoodie white.png">
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-3">
+                                        <img class="thumbnails" src="assets\images\merch\hoodie light blue.png">
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-3">
+                                        <img class="thumbnails" src="assets\images\merch\hoodie dark blue.png">
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-3">
+                                        <img class="thumbnails" src="assets\images\merch\hoodie red.png">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="row">
+
+
+                                    <div id="merchBox">
+                                        <div id="itemNameBox">HOODIE</div>
+                                        <div class="row-sm-12">
+                                            <u><b>SIZE:</b></u>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="sizeBox">XS</div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="sizeBox">S</div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="sizeBox">M</div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="sizeBox">L</div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="sizeBox">XL</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row-sm-12">
+                                            <u><b>COLOR:</b></u>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <div class="whiteCircle"></div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="lightBlueCircle"></div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="darkBlueCircle"></div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="redCircle"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row-sm-12">
+                                                <u><b>PRICE:</b></u>
+                                                <p> $20.00 USD</p>
+                                         </div>
+                                         <div id="blueButton">A<a href="#cart">ADD TO CART</a></div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <img class="largeMerch" src="assets\images\merch\hat red.png">
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-6 col-lg-3">
+                                        <img class="thumbnails" src="assets\images\merch\hat white.png">
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-3">
+                                        <img class="thumbnails" src="assets\images\merch\hat light blue.png">
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-3">
+                                        <img class="thumbnails" src="assets\images\merch\hat dark blue.png">
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-3">
+                                        <img class="thumbnails" src="assets\images\merch\hat red.png">
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        
+
+
+                            <div class="col">
+                                    <div class="row">
+    
+    
+                                        <div id="merchBox">
+                                            <div id="itemNameBox">HAT</div>
+                                            
+                                            <div class="row-sm-12">
+                                                <u><b>COLOR:</b></u>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <div class="whiteCircle"></div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <div class="lightBlueCircle"></div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <div class="darkBlueCircle"></div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <div class="redCircle"></div>
+                                                </div>
+                                            </div>
+                                            <div class="row-sm-12">
+                                                    <u><b>PRICE:</b></u>
+                                                    <p> $10.00 USD</p>
+                                             </div>
+                                             <div id="blueButton">A<a href="#cart">ADD TO CART</a></div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                        </div>
+
+                    </div>
+                
+                </div>            
+                <div class="col-lg-4">
+                        <div id="cartBox" >
+                            <div class="row">
+                                <div class="col-sm-1 ">
+                                    1
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <b>LIGHT BLUE T-SHIRT</b>
+                                </div>
+                                <div class="col-sm-1 ">
+                                    S
+                                </div>
+                                <div class="col-sm-4 ">
+                                    $12.00
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-1 ">
+                                    1
+                                </div>
+                                <div class="col-sm-6">
+                                    <b>DARK BLUE HOODIE</b>
+                                </div>
+                                <div class="col-sm-1 ">
+                                    M
+                                </div>
+                                <div class="col-sm-4 ">
+                                    $20.00
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-1 ">
+                                    1
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <b>RED HAT</b>
+                                </div>
+                                <div class="col-sm-1 ">
+                                        
+                                    </div>
+                                <div class="col-sm-4 ">
+                                    $10.00
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                    <div class="col-sm-1 ">
+                                            
+                                        </div>
+                                        <div class="col-sm-5 col-lg-6 ">
+                                            
+                                        </div>
+                                        <div class="col-sm-1 ">
+                                                
+                                        </div>
+                                        <div class="col-sm-4 ">
+                                             <u>TOTAL:</u> $32.00
+                                    </div>
+                            </div>
+                            <div class="row">
+                                <div id="redButton"><a href="#cart">VIEW CART></a></div>
+                            </div>
+                    
+                        </div>
+                    </div>
             </div>
         </div>
-    </div>
+    
 
 
 
