@@ -624,7 +624,7 @@
     text-align: center;
     
   }
-  .donateBox1 {
+  #donateBox1 {
     font-family: Century Gothic;
     font-size: 40px;
     font-weight: bold;
@@ -640,7 +640,7 @@
     background-color: white;
     text-align: center;
   }
-  .donateBox2 {
+  #donateBox2 {
     font-family: Century Gothic;
     font-size: 20px;
     font-weight: bold;
@@ -657,13 +657,13 @@
     background-color: white;
     text-align: center;
   }
-  .active,.donateBox1:hover, .donateBox2:hover{
+  donateBox1:active,{
     background-color: rgb(199, 255, 255);    
     border: 5px solid rgb(69, 193, 197);
     color: rgb(33, 72, 102);
 }
 
-.donateInput1 {
+#donateInput1 {
   font-family: Century Gothic;
   font-size: 30px;
   overflow: hidden;
@@ -678,7 +678,7 @@
   background-color: white;
   text-align: left;
 }
-.donateInput2 {
+#donateInput2 {
   font-family: Century Gothic;
   font-size: 30px;
   overflow: hidden;
