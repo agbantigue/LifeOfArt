@@ -75,6 +75,8 @@
       text-align: left;
 
     }   
+
+    
     #footer {
     font-family: Century Gothic;
     display: block;
@@ -130,10 +132,11 @@
   font-family: Century Gothic;
       
       background-color: rgb(238, 54, 37);
-      border-radius: 10px;
+      border-radius: 15px;
       width:100%;
       max-width: 97%;
       margin:10px;
+      margin-bottom:30px;
       padding: 10px;
       overflow: hidden;
       text-align: center;
@@ -150,6 +153,15 @@
       font-size: 30px;
       overflow: hidden;
       text-decoration: none;
+      
+}
+
+#redButton:hover, #loginbutton:hover {
+  background-color: rgb(255, 107, 94);
+}
+
+#redButton:active, #loginbutton:active {
+  background-color: rgb(33,72,102);
 }
 
 #loginbutton {
@@ -332,27 +344,34 @@
   form.example input[type=text] {
     font-family: Century Gothic;
     margin-top:10px;
-    margin-left: 10px;
     padding: 15px;
     padding-right: 10px;
+    margin-left:10px;
     margin-right: auto;
     font-size: 17px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border: none;
     float: left;
-    width: 100%;
-    max-width: 280px;
+    width: 80%;
     height:30px;
-    background: #f1f1f1;
+    background: white;
+    border: 1px solid rgb(238,54,37);
     
   }
   
+  @media screen and (max-width: 750px){
+    form.example {
+      margin-left: 30px;
+    }
+  }
+  
+ 
 
   form.example button {
     float: left;
     width: 40px;
-    height:30px;
+    height:32px;
     margin-top:10px;
     margin-right: 10px;
     border-bottom-right-radius: 20px;
@@ -367,7 +386,11 @@
   }
   
   form.example button:hover {
-    background: rgb(33,72,102);
+    background-color: rgb(255, 107, 94);
+  }
+
+  form.example button:active {
+    background-color: rgb(33, 72, 102);
   }
   
   
@@ -376,6 +399,7 @@
     clear: both;
     display: table;
   }
+
 
   .largeMerch {
     height: 100%;
@@ -393,15 +417,16 @@
   }
   
   
-  
+
+
   .thumbnails {
     height: auto;
-    min-height: 50px;
+    min-height: 45px;
     max-height: 100px;
     width: 100%;
     min-width: 50px;
     max-width: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     border-radius: 15px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -410,11 +435,18 @@
   
   }
 
-  .active, .thumbnails:hover {
+
+  .thumbnails:hover {
     opacity:1;
-    border: 1px solid rgb(69, 193, 197);
+    border: 2px solid rgb(69, 193, 197);
+  }
+
+  .thumbnails:active {
+    opacity: 0.8;
   }
   
+
+
   #merchBox {
     font-family: Century Gothic;
     font-size: 20px;
@@ -469,8 +501,15 @@
     text-align: center;
   }
 
-  .active,.sizeBox:hover{
-    background-color: rgb(199, 255, 255);    
+  .sizeBox:hover{
+    background-color: rgb(199, 255, 255);   
+    border: 2px solid rgb(69, 193, 197); 
+}
+
+.sizeBox:active{
+  background-color: rgb(69, 193, 197);    
+  border: 2px solid rgb(3, 114, 114);
+  color: white;   
 }
 
 
@@ -478,65 +517,100 @@
     height: 50px;
     width: 50px;
     border-radius:50%;
-    border: 2px solid rgb(199, 255, 255);
+    border: 1px solid rgb(33, 72, 102);
     background-color: white;
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
     
   }
-  .active,.whiteCircle:hover{
-    border: 2px solid rgb(69, 193, 197);    
-}
+
   .lightBlueCircle {
     height: 50px;
     width: 50px;
     border-radius:50%;
+    border: 1px solid rgb(33, 72, 102);
     background-color: rgb(199, 255, 255);
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
   }
-  .active,.lightBlueCircle:hover{
-    border: 2px solid rgb(69, 193, 197);    
-}
+
   .darkBlueCircle {
     height: 50px;
     width: 50px;
     border-radius:50%;
     background-color:rgb(33, 72, 102);
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
   }
-  .active,.darkBlueCircle:hover{
-    border: 2px solid rgb(69, 193, 197);    
-}
-
+ 
   .redCircle {
     height: 50px;
     width: 50px;
     border-radius:50%;
     background-color: rgb(238, 54, 37);
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
   }
-  .active,.redCircle:hover{
-    border: 2px solid rgb(69, 193, 197);    
+  .whiteCircle:hover,.lightBlueCircle:hover,.darkBlueCircle:hover,.redCircle:hover{
+    border: 3px solid rgb(69, 193, 197);    
 }
+
+
 
   #cartBox {
     font-family: Century Gothic;
     font-size: 15px;
     overflow: hidden;
     background-color: white;
-    height:auto;
-    max-height: 400px;
-    min-height: 150px;
+    height:auto;  
     width:auto;
-    max-width: 400px;
-    
     border-radius: 10px;
     margin: 20px;
     padding: 20px;
     color: rgb(33, 72, 102);
     text-align: center;
-    
+    line-height: 2;
+  }
+
+ 
+
+  #cartButton {
+    font-family: Century Gothic;
+        
+        background-color: rgb(238, 54, 37);
+        border-radius: 20px;
+        width:100%;
+        max-width: 97%;
+        margin:10px;
+        padding: 10px;
+        overflow: hidden;
+        text-align: center;
+        margin-left:auto;
+        margin-right: auto;
+        
+  
+  }
+
+ 
+
+  #cartButton a {
+    color: white;
+        text-align: center;
+        height: auto;
+        font-weight: bold;
+        font-size: 20px;
+        overflow: hidden;
+        text-decoration: none;
+        
   }
   
+  #cartButton:hover {
+    background-color: rgb(255, 107, 94);
+  }
+  
+  #cartButton:active {
+    background-color: rgb(33,72,102);
+  }
  
   .ml-15 {
     margin-left: 15px;
@@ -548,7 +622,6 @@
         background-color: rgb(33, 72, 102);
         border-radius: 10px;
         width:100%;
-        max-width: 97%;
         margin:10px;
         padding: 10px;
         overflow: hidden;
@@ -568,6 +641,47 @@
         text-decoration: none;
   }
 
+  #blueButton:hover {
+    background-color: rgb(54, 112, 156);
+  }
+
+  #blueButton:active {
+    background-color: rgb(238, 54, 37);
+  }
+
+  .minusButton {
+    height: 35px;
+    width: 35px;
+    border-radius:50%;
+    background-color: rgb(145, 248, 248);
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 1.1;
+    
+  }
+
+  .plusButton {
+    height: 35px;
+    width: 35px;
+    border-radius:50%;
+    background-color: rgb(145, 248, 248);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+    
+  }
+
+.minusButton:hover, .plusButton:hover {
+  background-color: rgb(69, 193, 197);
+}
+
+.minusButton:active, .plusButton:active {
+  background-color: rgb(33, 72, 102);
+}
   .donateimage {
     background-image: url("../images/homepage2.JPG");
     height: 300px;
@@ -597,6 +711,7 @@
         float: left;
   }
 
+
   #donateBar{
     font-family: Century Gothic;
       font-weight: bold;
@@ -606,6 +721,7 @@
       border-radius: 10px;
       margin: 10px;
       padding: 10px;
+      padding-left: 15px;
       color: rgb(33,72,102);
       text-align: left;
   }
@@ -624,72 +740,209 @@
     text-align: center;
     
   }
+  @media screen and (min-width: 600px){
+    #warningBar {
+      font-size:15px;
+    }
+  }
+  
   .donateBoxMoney {
     font-family: Century Gothic;
+    font-weight: bold;
+    overflow: hidden;
+    height: 100px;
+    width: auto;
+    min-width: 100px;
+    border-radius: 15px;
+    margin: 20px;
+    color: rgb(69, 193, 197);
+    background-color: white;
+    border: 5px solid white;
+    text-align: center;
+  
+  }
+  @media screen and (min-width: 1201px){
+    .donateBoxMoney {
+      font-size:40px;
+      padding-top: 15px;
+    }
+  }
+
+  @media screen and (max-width: 1200px){
+    .donateBoxMoney {
+      font-size:28px;
+      padding-top: 25px;
+    }
+  }
+
+  @media screen and (max-width: 700px){
+    .donateBoxMoney {
+      font-size:40px;
+      padding-top: 15px;
+    }
+  }
+
+  .donateBoxMoney:hover, .donateBoxSupplies:hover{
+    background-color: rgb(199, 255, 255);    
+    border: 5px solid rgb(69, 193, 197);
+    color: rgb(33, 72, 102);
+    
+}
+
+.donateBoxMoney:active, .donateBoxSupplies:active {
+    background-color: rgb(69, 193, 197);    
+    border: 5px solid rgb(3, 114, 114);
+    color: white;
+}
+
+.donateBoxMoney::after {
+  font-family: Century Gothic;
     font-size: 40px;
     font-weight: bold;
     overflow: hidden;
     height: 100px;
     width: auto;
-    min-width: 125px;
+    min-width: 100px;
     border-radius: 15px;
     margin: 20px;
     padding: 5px;
     padding-top: 15px;
-    color: rgb(69, 193, 197);
+    color: rgb(33, 72, 102);
     background-color: white;
+    border: 5px solid rgb(238,54,37);
     text-align: center;
-  }
+
+}
   .donateBoxSupplies {
     font-family: Century Gothic;
-    font-size: 20px;
     font-weight: bold;
     overflow: hidden;
-    height: 100px;
-    width: auto;
-    min-width: 150px;
+    height: 115px;
+    width:auto;
+    min-width: 75%;
     border-radius: 15px;
     margin: 20px;
-    padding: 10px;
-    padding-top: 25px;
-    padding-bottom: 25px;
     color: rgb(69, 193, 197);
     background-color: white;
     text-align: center;
+
+    
+
   }
-  .active,.donateBoxMoney:hover, .donateBoxSupplies:hover{
-    background-color: rgb(199, 255, 255);    
-    border: 5px solid rgb(69, 193, 197);
-    color: rgb(33, 72, 102);
-}
+  
+  @media screen and (min-width: 1221px){
+    .donateBoxSupplies {
+      font-size:16px;
+      padding:30px;
+      padding-inline-end: inherit;
+      padding-inline-start: inherit;
+    }
+  }
+
+  @media screen and (max-width: 1220px){
+    .donateBoxSupplies {
+      font-size:14px;
+      padding:30px;
+      padding-inline-end: inherit;
+      padding-inline-start: inherit;
+    }
+  }
+
+  @media screen and (max-width: 992px){
+    .donateBoxSupplies {
+      font-size:15px;
+      padding:30px;
+      padding-inline-end: inherit;
+      padding-inline-start: inherit;
+    }
+  }
+
+  @media screen and (max-width: 830px){
+    .donateBoxSupplies {
+      font-size:15px;
+      padding:20px;
+      padding-inline-end: inherit;
+      padding-inline-start: inherit;
+    }
+  }
+
+  @media screen and (max-width: 767.5px){
+    .donateBoxSupplies {
+      font-size:16px;
+      padding:40px;
+      padding-inline-end: inherit;
+      padding-inline-start: inherit;
+    }
+  }
+  @media screen and (max-width: 647px){
+    .donateBoxSupplies {
+      font-size:16px;
+      padding:40px;
+      padding-inline-end: inherit;
+      padding-inline-start: inherit;
+    }
+  }
+
+  @media screen and (max-width: 575px){
+    .donateBoxSupplies {
+      font-size:16px;
+      padding:35px;
+      padding-inline-end: inherit;
+      padding-inline-start: inherit;
+    }
+  }
+
+  
+  @media screen and (max-width: 500px){
+    .donateBoxSupplies {
+      font-size:16px;
+      padding:30px;
+      padding-inline-end: inherit;
+      padding-inline-start: inherit;
+    }
+  }
 
 .donateInputMoney {
   font-family: Century Gothic;
-  font-size: 30px;
+  font-size: 20px;
   overflow: hidden;
   height: 100px;
-  width: auto;
-  min-width: 125px;
+  width: 100%;
+  min-width: 70px;
   border-radius: 15px;
   margin: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 5px;
+  padding-top: 15px;
+  color: grey;
+  background-color: white;
+  text-align: left;
+  
+}
+.donateInputSupplies {
+  font-family: Century Gothic;
+  font-size: 20px;
+  overflow: hidden;
+  height: 100px;
+  width: 100%;
+  min-height: 115px;
+  border-radius: 15px;
+  margin: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
   padding: 5px;
   padding-top: 15px;
   color: grey;
   background-color: white;
   text-align: left;
 }
-.donateInputSupplies {
-  font-family: Century Gothic;
-  font-size: 30px;
-  overflow: hidden;
-  height: 100px;
-  width: auto;
-  min-height: 75px;
-  border-radius: 15px;
-  margin: 20px;
-  padding: 5px;
-  padding-top: 15px;
-  color: grey;
-  background-color: white;
-  text-align: left;
+
+hr {
+  width: 95%;
+  height: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(33, 72, 102);
+  border: 0 none;
 }
