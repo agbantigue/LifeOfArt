@@ -91,7 +91,7 @@
 
 #footer a {
   font-family: "century-gothic", sans-serif;
-  font-size: 10px;
+  font-size: 8px;
   display: block;
   color: white;
   text-align: center;
@@ -957,8 +957,9 @@ hr {
   margin: 20px;
   height: auto;
   width: 100%;
-  min-width: 400px;
+  
 }
+
 
 #calendarMonth {
   font-family: "century-gothic", sans-serif;
@@ -966,8 +967,6 @@ hr {
   font-weight: bold;
   overflow: hidden;
   height: auto;
-  width: auto;
-  min-width: 400px;
   background-color: white;
   color: rgb(238, 54, 37);
   border-radius: 15px;
@@ -975,7 +974,7 @@ hr {
   margin: 10px;
   padding: 10px;
   text-align: center;
-
+  margin: 10px;
 }
 
 .calendarDays {
@@ -1018,7 +1017,8 @@ hr {
 
 @media screen and (max-width: 940px) {
   .calendarDays li {
-    font-size: 12px;
+    font-size: 11px;
+    
   }
 }
 
@@ -1066,8 +1066,9 @@ hr {
 
 @media screen and (max-width: 940px) {
   .calendarDates li {
-    font-size: 12px;
-    margin-right: 3px;
+    font-size: 10px;
+    margin-right: 1px;
+    padding-left: 2px;
   }
 }
 
@@ -1110,30 +1111,36 @@ hr {
   border-radius: 15px;
   width: 100%;
   min-width: 100px;
-  height: 70%;
-  min-height: 120px;
-  margin-bottom: 20px;
+  height: 90%;
+  
   margin-right: 20px;
-
   margin-top: 10px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+  margin-bottom: 10px;
 }
+
+@media screen and (min-width: 600px) {
+  .eventThumbnail{
+  height: 70%;
+  
+  }
+}
+
 
 #eventBox {
   background-color: white;
   color: rgb(33, 72, 102);
   font-display:"century-gothic", sans-serif;
   text-align: left;
-  font-size: 12px;
+  font-size: 13px;
   border-radius: 15px;
   height: auto;
   min-height: 140px;
   width: auto;
-
-  margin-bottom: 20px;
-  margin-top: 10px;
+  margin-bottom: 30px;
+  
 
 }
 
@@ -1145,7 +1152,9 @@ hr {
 
 #eventBox p {
   padding-left: 10px;
+  padding-right: 10px;
   padding-top: 10px;
+
 }
 
 .eventBoxHeader {
@@ -1176,9 +1185,7 @@ hr {
   padding: 10px;
   overflow: hidden;
   text-align: center;
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-left: auto;
+  margin:10px;
   padding-top: 25px;
 
 }
